@@ -15,6 +15,9 @@
                     @endif
 
                     You are logged in!
+                    <div class="alert alert-dark">
+                        <a href="{{route('admin')}}">Accéder à l'espace admin</a>
+                    </div>
 
                     <br>
                     @foreach ($users as $user)

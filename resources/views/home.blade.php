@@ -14,9 +14,9 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    Vous êtes connecté !
                     <div class="alert alert-dark">
-                        <a href="{{route('admin')}}">Accéder à l'espace admin</a>
+                        <a href="{{route('admin')}}">Accédez à l'espace admin</a>
                     </div>
 
                     <br>
@@ -26,6 +26,7 @@
                             <p>Firstname: {{$user['firstname']}}</p>
                             <p>Lastname: {{$user['lastname']}}</p>
                             <p>Email: {{$user['email']}}</p>
+                            <p>Amdin: {{$user['admin']}}</p>
                             <p>Compétences: </p>
                             @foreach ($user->skills as $skill)
                             <div class="alert alert-info">

@@ -20,5 +20,6 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/admin', 'AdminController@log')->name('admin');
 Route::get('admin/connexion', 'AdminController@log')->name('admin/connexion');
-Route::post('/admin', 'AdminController@post')->name('admin');
-Route::post('/admin/modifieruser', 'AdminController@modifieruser')->name('admin/modifieruser');
+//Route::post('/admin', 'AdminController@post')->name('admin');
+//Route::post('/admin/modifieruser', 'AdminController@modifieruser')->name('admin/modifieruser');
+Route::resource('users','UserController');
